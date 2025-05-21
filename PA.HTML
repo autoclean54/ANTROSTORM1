@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAQUETES - Fiestas Neón</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      overflow-x: hidden;
+      animation: cambiarFondo 10s linear infinite;
+    }
+
+    @keyframes cambiarBorde {
+      0% { border-color: #0ff; box-shadow: 0 0 20px #0ff; }
+      25% { border-color: #f0f; box-shadow: 0 0 20px #f0f; }
+      50% { border-color: #0f0; box-shadow: 0 0 20px #0f0; }
+      75% { border-color: #ff9900; box-shadow: 0 0 20px #ff9900; }
+      100% { border-color: #0ff; box-shadow: 0 0 20px #0ff; }
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    header img {
+      max-height: 100px;
+      filter: none;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 3em;
+      margin: 20px 0;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+
+    .paquetes-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .paquete {
+      width: 45%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border: 2px solid;
+      border-radius: 15px;
+      animation: cambiarBorde 2s infinite;
+    }
+
+    .paquete h2 {
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .paquete p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    .boton-regresar {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 25px;
+      background-color: transparent;
+      color: #fff;
+      border: 2px solid;
+      border-radius: 8px;
+      font-size: 1.2em;
+      cursor: pointer;
+      animation: cambiarBorde 2s infinite;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .paquete {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="AE.png" alt="Logo Fiestas Neón">
+  </header>
+
+  <div class="titulo">PAQUETES</div>
+
+  <div class="paquetes-container">
+    <div class="paquete">
+      <h2>PAQUETE BÁSICO</h2>
+      <p><strong>Neón Flash</strong><br>
+      °Iluminación LED básica en colores neón<br>
+      °Bocinas portátiles con playlist prediseñada<br>
+      °Pintura facial para 30 personas<br>
+      °Decoración con globos neón y cintas fluorescentes</p>
+
+      <p><strong>Fiesta Brillosa</strong><br>
+      °Mini set de DJ automatizado<br>
+      °Pulseras, collares y lentes neón para 30 personas<br>
+      °Fondo para fotos con ambientación neón<br>
+      °2 horas de animación básica con luces blacklight</p>
+
+      <p><strong>Spot Neón</strong><br>
+      °Área de descanso con cojines neón<br>
+      °Luz negra + proyector de efectos básicos<br>
+      °Bebidas sin alcohol con hielo LED<br>
+      °Accesorios neón para selfies (marcos, carteles, pelucas)</p>
+
+      <p><strong>Mini Fiesta Neón</strong><br>
+      °Decoración de entrada con tubos de luz<br>
+      °1 animador temático<br>
+      °Pintura corporal para niños<br>
+      °Música con bocinas bluetooth y playlist neón</p>
+
+      <p><strong>Precio: $18,499</strong></p>
+    </div>
+
+    <div class="paquete">
+      <h2>PAQUETE PREMIUM</h2>
+      <p><strong>Neón DELUXE</strong><br>
+      °DJ en vivo con cabina iluminada<br>
+      °Show de luces con láser y máquina de humo<br>
+      °Barra de cócteles fluorescentes (con o sin alcohol)<br>
+      °Zona gamer retro neón (arcades o consolas iluminadas)</p>
+
+      <p><strong>Experiencia Galáctica</strong><br>
+      °Escenografía completa con estrellas, planetas y túnel neón<br>
+      °Show interactivo con bailarines LED<br>
+      °Pulseras sincronizadas con música<br>
+      °Buffet temático con postres y snacks brillantes</p>
+
+      <p><strong>Luz y Fantasía</strong><br>
+      °Decoración en paredes y pista de baile<br>
+      °Show de pintura corporal en vivo<br>
+      °Ambientación 360° con sonido envolvente<br>
+      °Área de fotos 3D con efectos ópticos neón</p>
+
+      <p><strong>Sueño Eléctrico</strong><br>
+      °Pista de baile con sensores de movimiento y luces inteligentes<br>
+      °Cabina de fotos giratoria 360°<br>
+      °Set completo de maquillaje profesional neón<br>
+      °Show de fuego frío y pirotecnia interior controlada</p>
+
+      <p><strong>Precio: $25,499</strong></p>
+    </div>
+  </div>
+
+  <a href="NEON.HTML" class="boton-regresar">REGRESAR</a>
+</body>
+</html>
